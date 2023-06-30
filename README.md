@@ -9,4 +9,4 @@ myWebSite2 : my profile.
 自己紹介カード的な。
 
 myWebSite3 : produce my home town.
-地元の紹介的な。spring-bootでフォームを実装する予定。
+地元の紹介的な。spring-bootでフォームを実装する予定。※(2023/06/30)実装 → 'https://github.com/Memolia3/Spring-bootApplication2'

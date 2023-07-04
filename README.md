@@ -10,3 +10,6 @@ myWebSite2 : my profile.
 
 myWebSite3 : produce my home town.
 地元の紹介的な。spring-bootでフォームを実装する予定。※(2023/06/30)実装 → 'https://github.com/Memolia3/Spring-bootApplication2'
+
+myWebSite4 : learned about special characters and symbols.
+様々な特殊文字を使ったサイトを作成。

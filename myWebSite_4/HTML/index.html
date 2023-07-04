@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ぬるぽ</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="title_container">
+            <h1>Null&nbsp;Pointer&nbsp;Exception</h1>
+            <h2>～&nbsp;ぬるぽがやってくる&nbsp;～</h2>
+        </div>
+    </header>
+    <div class="main_container">
+        <h2>Javaコードで解説</h3>
+        <div class="sample">
+            <pre class="code_sample">
+    <p>&laquo;修正前&raquo;</p>
+    public&nbsp;class&nbsp;SampleCode&nbsp;&lbrace;<br>
+    &#009;public&nbsp;static&nbsp;void&nbsp;main&lpar;String&#91;&#93;&nbsp;args&rpar;&nbsp;&lbrace;<br>
+    &#009;&#009;String&nbsp;str&nbsp;=&nbsp;null;<br>
+    &#009;&#009;switch&lpar;str&rpar;&nbsp;&lbrace;<br>
+    &#009;&#009;&#009;//省略・・・<br>
+    &#009;&#009;&rbrace;<br>
+    &#009;&rbrace;<br>
+    &rbrace;
+            </pre>
+            <div class="describe">
+                <p><br><br>結果はもちろんNullPointerException!!!<br>
+                nullを参照するようなコードは<br>
+                すべてぬるぽなんだ!!</p>
+            </div>
+            <pre class="code_sample">
+    <p>&laquo;修正後&raquo;</p>
+    public&nbsp;class&nbsp;SampleCode&nbsp;&lbrace;<br>
+    &#009;public&nbsp;static&nbsp;void&nbsp;main&lpar;String&#91;&#93;&nbsp;args&rpar;&nbsp;&lbrace;<br>
+    &#009;&#009;String&nbsp;str&nbsp;=&nbsp;null;<br>
+    &#009;&#009;if&lpar;str&nbsp;==&nbsp;null&rpar;&nbsp;&lbrace;<br>
+    &#009;&#009;&#009;//省略・・・<br>
+    &#009;&#009;&rbrace;&nbsp;else&nbsp;&lbrace;<br>
+    &#009;&#009;&#009;System.out.print&lpar;&#147;not&nbsp;null&#148;&rpar;;<br>
+    &#009;&#009;&rbrace;<br>
+    &#009;&rbrace;<br>
+    &rbrace;
+            </pre>
+            <div class="describe"> 
+                <p><br><br>if文を使ってnullを回避できる!!!<br>
+                try-catch文の方が読みやすいしいいかも!?</p>
+            </div>
+        </div>
+        <div class="sample">
+            <pre class="code_sample">
+    <p>&laquo;別例&raquo;</p>
+    public&nbsp;class&nbsp;SampleCode&nbsp;extends&nbsp;SampleCodeSuperClass&nbsp;&lbrace;<br>
+    &#009;public&nbsp;static&nbsp;void&nbsp;main&lpar;String&#91;&#93;&nbsp;args&rpar;&nbsp;&lbrace;<br>
+    &#009;&#009;SampleCodeSuperClass&#91;&#93;&nbsp;sc&nbsp;=&nbsp;&lbrace;new&nbsp;SampleCode&lpar;&rpar;&comma;&nbsp;new&nbsp;SampleCodeSuperClass&lpar;&rpar;&comma;&nbsp;null&rbrace;;<br>
+    &#009;&#009;for&lpar;SampleCodeSuperClass&nbsp;s&nbsp;:&nbsp;sc&nbsp;&rpar;&nbsp;&lbrace;<br>
+    &#009;&#009;&#009;System.out.println&lpar;s.getClass&lpar;&rpar;&rpar;;<br>
+    &#009;&#009;&rbrace;<br>
+    &#009;&rbrace;<br>
+    &rbrace;
+            </pre>
+            <div class="describe">
+                <p><br><br>s.getClass&lpar;&rpar;のように参照した場合はぬるぽ<br>
+                単にsだけで出力した場合は大丈夫!!!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

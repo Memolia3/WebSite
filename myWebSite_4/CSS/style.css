@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Cherry+Bomb+One&family=Darumadrop+One&family=Dela+Gothic+One&family=DotGothic16&family=Playfair+Display:ital@1&family=Yomogi&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Bacasime Antique', serif;
+    font-family: 'Cherry Bomb One', cursive;
+    font-family: 'Darumadrop One', cursive;
+    font-family: 'Dela Gothic One', cursive;
+    font-family: 'DotGothic16', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Yomogi', cursive;
+    background-color: black;
+    color: white;
+}
+
+.header {
+    height: 20%;
+    color: rgba(255, 0, 0, 0.692);
+    display: flex;
+    justify-content: center;
+    text-shadow: 0px 20px 3px rgba(207, 112, 112, 0.4);
+    font-weight: bold;
+}
+
+.main_container h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.sample {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1em;
+}

@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    background-image: url(../images/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    color: maroon;
+    -webkit-text-stroke: 0.5px red;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .icon {
+    opacity: 60%;
+}
+
+.header .title_container {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+.main_container {
+    display: none;
+    color: rgba(128, 0, 0, 0.966);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 75%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+
+.main_container #myName {
+    display: flex;
+    justify-content: center;
+}
+
+.main_container #help {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    text-align: center;
+    margin-right: 300px;
+}
+
+.main_container #change {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.type {
+    opacity: 0;
+}
+
+.type.active {
+    opacity: 1;
+}
+
+.describe {
+    display: flex;
+    justify-content: center;
+    color: beige;
+}
+

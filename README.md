@@ -16,3 +16,6 @@ myWebSite4 : learned about special characters and symbols.
 
 myWebSite5 : my profile like a "Tokumei M".
 匿名Ｍの質問形式で簡単な自己紹介サイトを作成。
+
+myWebSite6 : js practice site.　refferred to 'https://mirailog.jp/javascript-typing-animation'.
+javascriptの練習として作成。

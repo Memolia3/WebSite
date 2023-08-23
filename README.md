@@ -20,5 +20,5 @@ myWebSite5 : my profile like a "Tokumei M".
 myWebSite6 : js practice site.　refferred to 'https://mirailog.jp/javascript-typing-animation'.
 javascriptの練習として作成。
 
-myWebSite7 : login & register web site using vanilla php.
+myWebSite7 : login & register web site using vanilla php. ✓unfinished.
 phpの練習として作成。データベースの接続も実装。

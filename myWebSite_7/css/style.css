@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+}
+
+#lr {
+    color: white;
+    background-image: url("../images/login&registerBackground.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.title_container {
+    display: flex;
+    justify-content: center;
+    transform: translateY(50%) translateX(0%);
+  -webkit- transform: translateY(50%) translateX(0%);
+}
+
+.lr_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transform: translateY(20%) translateX(0%);
+    -webkit- transform: translateY(20%) translateX(0%);
+    opacity: 0;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+     transform: translateY(20%) translateX(0%);
+    -webkit- transform: translateY(20%) translateX(0%);
+}
+
+input[type="text"] {
+    color: white;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: snow;
+}
+
+input[type="text"]:focus {
+    color: white;
+    background: transparent;
+}
+
+.button_container .button{
+    color: white;
+    background: transparent;
+    border-radius: 15px;
+    border-color: snow;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>ログイン</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body id="lr">
+        <div class="title_container">
+            <h2>アカウントログイン</h2>
+        </div>
+        <div class="lr_container" id="lr_fade">
+            <div class="left_container">
+                <img src="../images/myIcon.png" width="100px">
+                <p>登録している</p>
+                <p><i class='bx bx-check-circle'></i>&nbsp;メールアドレス</p>
+                <p><i class='bx bx-check-circle'></i>&nbsp;ユーザ名</p>
+                <p><i class='bx bx-check-circle'></i>&nbsp;パスワード</p>
+                <p>を入力してください</p>
+            </div>
+            <div class="right_container">
+                <form id="login_form" class="form" action="../php/Login.php" method="post">
+                <p>メールアドレス&nbsp;:&nbsp;<br><input type="text" placeholder="abc123@..." name="login[0]"></p>
+                <p>ユーザ名&nbsp;:&nbsp;<br><input type="text" placeholder="User..." name="login[1]"></p>
+                <p>パスワード&nbsp;:&nbsp;<br><input type="text" placeholder="A1UE0..." name="login[2]"></p>
+                <div class="button_container">
+                    <input class="button" type="submit" value="送信">
+                    <input class="button" type="reset" value="リセット">
+                </div>
+                <p>アカウントをお持ちでない方<br>
+                    &nbsp;<i class='bx bx-chevrons-right'></i>&nbsp;<a href="../html/register.html">アカウントを作成する</a></p>
+                <p>分からないことはありますか？<br>
+                    &nbsp;<i class='bx bx-chevrons-right'></i>&nbsp;<a href="../html/form.html">お問い合わせ</a></p>
+            </form>
+            </div>
+        </div>
+        <script src="../js/script.js"></script>
+    </body>
+</html>

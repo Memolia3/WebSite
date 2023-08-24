@@ -2,9 +2,54 @@ body {
     margin: 0;
 }
 
+input[type="text"] {
+    color: white;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: snow;
+}
+
+input[type="text"]:focus {
+    color: white;
+    outline: none;
+    background: transparent;
+}
+
+textarea {
+    resize: none;
+    color: white;
+    background: transparent;
+    border-color: snow;
+    border-radius: 5px;
+}
+
+textarea:focus {
+    color: white;
+    outline: none;
+    background: transparent;
+}
+
+a {
+    color: #ff66ff;
+}
+
+a:valid {
+    color: #ff33cc;
+}
+
 #lr {
     color: white;
     background-image: url("../images/login&registerBackground.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+#form {
+    color: white;
+    background-image: url("../images/formBackground.jpg");
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
@@ -14,7 +59,7 @@ body {
     display: flex;
     justify-content: center;
     transform: translateY(50%) translateX(0%);
-  -webkit- transform: translateY(50%) translateX(0%);
+     -webkit- transform: translateY(50%) translateX(0%);
 }
 
 .lr_container {
@@ -36,23 +81,21 @@ body {
     -webkit- transform: translateY(20%) translateX(0%);
 }
 
-input[type="text"] {
-    color: white;
-    background: transparent;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-color: snow;
-}
-
-input[type="text"]:focus {
-    color: white;
-    background: transparent;
-}
-
 .button_container .button{
     color: white;
     background: transparent;
     border-radius: 15px;
     border-color: snow;
+}
+
+.form_container {
+    position: relative;
+    display: flex;
+    top: 30px;
+    justify-content: center;
+    opacity: 0;
+}
+
+.lr_link {
+    display: flex;
 }

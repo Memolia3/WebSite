@@ -23,9 +23,9 @@ if (!empty($_POST["login"])) {
         die('errorNo1 : ' . $ex->getMessage());
     }
     
-    $search_email = $data[0];
-    $search_name = $data[1];
-    $search_password = $data[2];
+    $search_email = htmlspecialchars($data[0]);
+    $search_name = htmlspecialchars($data[1]);
+    $search_password = htmlspecialchars($data[2]);
     
     try {
         $sql = "SELECT * FROM user WHERE email = :email AND name = :name AND password = :password";

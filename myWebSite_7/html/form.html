@@ -1,15 +1,32 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-<html>
+<html lang="ja">
     <head>
-        <title>TODO supply a title</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>お問い合わせ</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
-    <body>
-        <div>TODO write content</div>
+    <body id="form">
+        <div class="title_container">
+            <h2>お問い合わせ</h2>
+        </div>
+        <div class="form_container" id="lr_fade">
+            <form id="form_display" action="../php/form.php" method="post">
+                <p>メールアドレス&nbsp;:&nbsp;<br><input type="text" placeholder="abc123@..." name="form[0]"></p>
+                <p>お名前(※ハンドルネーム可)&nbsp;:&nbsp;<br><input type="text" placeholder="User..." name="form[1]"></p>
+                <p>お問い合わせ内容&nbsp;:&nbsp;<br><textarea rows="10" cols="60" name="form[2]"></textarea></p>
+                <div class="button_container">
+                    <input class="button" type="submit" value="送信">
+                    <input class="button" type="reset" value="リセット">
+                </div>
+                <div class="lr_link">
+                    <p>新規の方はこちら<br>
+                    &nbsp;<i class='bx bx-chevrons-right'></i>&nbsp;<a href="../html/register.html">アカウントを作成する</a></p>
+                    <p>アカウントをお持ちの方はこちら<br>
+                    &nbsp;<i class='bx bx-chevrons-right'></i>&nbsp;<a href="../html/login.html">ログインする</a></p>
+                </div>
+            </form>
+        </div>
+        <script src="../js/script.js"></script>
     </body>
 </html>

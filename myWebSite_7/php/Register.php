@@ -11,9 +11,9 @@ if (!empty($_POST["register"])) {
     for($i = 0; $i < 6; $i++) {
         $code += mt_rand(0,1000);
     }
-    $_SESSION['email'] = $data[0];
-    $_SESSION['name'] = $data[1];
-    $_SESSION['password'] = $data[2];
+    $_SESSION['email'] = htmlspecialchars($data[0]);
+    $_SESSION['name'] = htmlspecialchars($data[1]);
+    $_SESSION['password'] = htmlspecialchars($data[2]);
     $_SESSION['code'] = $code;
     $json_authCode = json_encode($code);
 ?>
@@ -49,9 +49,9 @@ if (!empty($_POST["register"])) {
         $pdo->beginTransaction();
         $sql = "INSERT INTO user (name, password, email) VALUES (:name, :password, :email)";
         $stmh = $pdo->prepare($sql);
-        $stmh->bindValue(':name', $data[1], PDO::PARAM_STR);
-        $stmh->bindValue(':password', $data[2], PDO::PARAM_STR);
-        $stmh->bindValue(':email', $data[0], PDO::PARAM_STR);
+        $stmh->bindValue(':name', $_SESSION['name'], PDO::PARAM_STR);
+        $stmh->bindValue(':password', $_SESSION['password'], PDO::PARAM_STR);
+        $stmh->bindValue(':email', $_SESSION['email'], PDO::PARAM_STR);
         $stmh->execute();
         $pdo->commit();
     } catch (PDOException $ex) {
